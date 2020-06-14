@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="12dp"
+    android:elevation="12dp"
+    android:layout_margin="7dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+        <TextView
+            android:id="@+id/item_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="android"
+            android:textSize="34sp"
+            android:fontFamily="monospace"
+            android:textColor="@color/colorPrimaryDark"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+        <TextView
+            android:id="@+id/item_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="12:45"
+            android:layout_marginTop="5dp"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:fontFamily="monospace"
+            android:textColor="@color/colorBackground"
+            app:layout_constraintTop_toBottomOf="@id/item_title_tv"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <Button
+            android:id="@+id/item_edit"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="@drawable/ic_edit"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
